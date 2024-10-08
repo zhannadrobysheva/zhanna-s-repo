@@ -1,2 +1,2 @@
-name= input ('Введите имя')
-print('Пока,'+name)
+name = input("Введите имя")
+print("Пока," + name)
