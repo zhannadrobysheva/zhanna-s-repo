@@ -5,10 +5,11 @@ print(slova)
 result = []  # Создаем новый список для хранения результатов
 
 # Проходим по всем словам
-for index, слово in enumerate(slova):
+for index, slovo in enumerate(slova):
     if index % 2 == 1:  # Если индекс четный
-        result.append(слово[::-1])  # Добавляем перевернутое слово в список
+        result.append(slovo[::-1])  # Добавляем перевернутое слово в список
     else:
-        result.append(слово)  # Добавляем обычное слово в список
+        result.append(slovo)  # Добавляем обычное слово в список
 print(result)  # Выводим результат
+
 
