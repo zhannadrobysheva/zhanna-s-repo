@@ -3,9 +3,9 @@ greed = input("Фамилии людей, которые получили над
 # Преобразование списков в множества 
 cunning_set = set(cunning)
 greed_set = set(greed)
-# Фамилии, получившие только одну надбавку
-only_cunning = cunning_set - greed_set
-only_greed = greed_set - cunning_set
-# Количество людей, которые получили только одну из двух надбавок
-people = len(only_cunning) + len(only_greed)
+only_cunning = cunning_set.difference(greed_set)
+only_greed = greed_set.difference(cunning_set)
+people = len(only_cunning. symmetric_difference(only_greed))
 print("Количество людей, которые получили только одну надбавку: ", people)
+only_one_bonus = only_cunning.union(only_greed)
+print("Фамилии людей, получивших только одну надбавку: ", ', '.join(only_one_bonus))
